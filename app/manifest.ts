@@ -7,7 +7,7 @@ export default function manifest(): MetadataRoute.Manifest {
     short_name: "پێویست",
     description: "کڕین و فرۆشی کالای دەستی دوو",
     start_url: "./?application=true",
-    display: "standalone",
+    display: "fullscreen",
     orientation: "portrait",
     background_color: "#fff",
     theme_color: "#fff",
