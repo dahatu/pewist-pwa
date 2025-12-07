@@ -32,21 +32,21 @@ export default function Home() {
             theme.setTheme("dark");
           }}
         >
-          Dark Mode
+          Set to Dark Mode
         </Button>
         <Button
           onClick={() => {
             theme.setTheme("light");
           }}
         >
-          Light Mode
+          Set to Light Mode
         </Button>
         <Button
           onClick={() => {
             theme.setTheme("system");
           }}
         >
-          System
+          Defaukt Device Theme
         </Button>
         <Link href={"/install"}>Schedule Browser Notification</Link>
       </div>
