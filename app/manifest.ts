@@ -8,7 +8,6 @@ export default function manifest(): MetadataRoute.Manifest {
     description: "کڕین و فرۆشی کالای دەستی دوو",
     start_url: "./?application=true",
     display: "standalone",
-    display_override: ["minimal-ui", "fullscreen", "window-controls-overlay"],
     orientation: "portrait",
     background_color: "#fff",
     theme_color: "#fff",
