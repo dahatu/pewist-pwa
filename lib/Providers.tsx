@@ -3,6 +3,7 @@
 import { PropsWithChildren } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ThemeProvider } from "next-themes";
+import { DirectionProvider } from "@radix-ui/react-direction";
 
 const client = new QueryClient();
 
@@ -10,12 +11,12 @@ const Providers = ({ children }: PropsWithChildren) => {
   return (
     <QueryClientProvider client={client}>
       <ThemeProvider
-       attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
+        attribute="class"
+        defaultTheme="system"
+        enableSystem
+        disableTransitionOnChange
       >
-        {children}
+        <DirectionProvider dir="rtl">{children}</DirectionProvider>
       </ThemeProvider>
     </QueryClientProvider>
   );
