@@ -1,15 +1,20 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useTheme } from "next-themes";
 
 export default function Home() {
-
-  const theme = useTheme()
+  const theme = useTheme();
 
   return (
-    <div className="h-[2000px]">
-      <Input aria-invalid/>
+    <div className="flex flex-col gap-2">
+      <Input />
+      <Button>تکایە کلیک بکە</Button>
+      <div className="h-[1000px] "></div>
+      <Input />
+      <div className="h-[1000px] "></div>
+      <Input />
     </div>
   );
 }
