@@ -62,7 +62,7 @@ const AppWrapper = ({ children }: PropsWithChildren) => {
               id: "profile",
               icon: (tab) => (
                 <Icon
-                  name={tab == "profile" ? "user-2-fill" : "user-2-line"}
+                  name={tab == "profile" ? "user-3-fill" : "user-3-line"}
                   className={
                     tab == "profile" ? "text-primary" : "text-inherit"
                   }
