@@ -68,7 +68,7 @@ const AppWrapper = ({ children }: PropsWithChildren) => {
                   }
                 />
               ),
-              label: "نیشانکراوەکان",
+              label: "هەژمارەکەم",
               onClick: () => {
                 console.log("user");
               },
