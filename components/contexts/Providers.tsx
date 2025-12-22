@@ -16,7 +16,7 @@ const Providers = ({ children }: PropsWithChildren) => {
         enableSystem
         disableTransitionOnChange
       >
-        <DirectionProvider dir="rtl">{children}</DirectionProvider>
+        <DirectionProvider dir="ltr">{children}</DirectionProvider>
       </ThemeProvider>
     </QueryClientProvider>
   );

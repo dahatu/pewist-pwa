@@ -14,7 +14,6 @@ type UseAudioSeekProps = {
   buffered?: number; // seconds
   markers?: Marker[];
   snapToMarkers?: boolean;
-  orientation?: "horizontal" | "vertical";
   disabled?: boolean;
   className?: string | undefined,
 
@@ -32,7 +31,6 @@ export function useAudioSeek({
   buffered = 0,
   markers = [],
   snapToMarkers = false,
-  orientation = "horizontal",
   disabled = false,
   onSeekStart,
   onSeek,
@@ -55,10 +53,7 @@ export function useAudioSeek({
   const calcValue = (clientX: number, clientY: number) => {
     if (!trackRef.current) return current;
     const rect = trackRef.current.getBoundingClientRect();
-    const percent =
-      orientation === "horizontal"
-        ? (clientX - rect.left) / rect.width
-        : 1 - (clientY - rect.top) / rect.height;
+    const percent = (clientX - rect.left) / rect.width
 
     const raw = min + percent * (max - min);
     const stepped = Math.round(raw / step) * step;
@@ -111,7 +106,6 @@ export function useAudioSeek({
     percent: ((current - min) / (max - min)) * 100,
     bufferedPercent: (buffered / max) * 100,
     markers,
-    orientation,
     handlers: {
       onPointerDown,
       onPointerMove,

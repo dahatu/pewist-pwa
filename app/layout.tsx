@@ -16,12 +16,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ku" dir="rtl" suppressHydrationWarning>
+    <html lang="ku" dir="ltr" suppressHydrationWarning>
       <body className={`flex items-center justify-center text-xs antialiased`}>
         <Providers>
-          <AppWrapper>
             {children}
-          </AppWrapper>
         </Providers>
       </body>
     </html>
