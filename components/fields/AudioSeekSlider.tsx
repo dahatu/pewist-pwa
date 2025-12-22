@@ -22,7 +22,7 @@ export function AudioSeekSlider(props: Props) {
       {...handlers}
       style={{
         position: "relative",
-        width: isVertical ? 6 : "50%",
+        width: isVertical ? 6 : "100%",
         height: isVertical ? "100%" : 3,
         touchAction: "none",
         outline: 'none'
