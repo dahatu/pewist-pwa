@@ -19,7 +19,9 @@ export default function RootLayout({
     <html lang="ku" dir="ltr" suppressHydrationWarning>
       <body className={`flex items-center justify-center text-xs antialiased`}>
         <Providers>
+          <AppWrapper>
             {children}
+          </AppWrapper>
         </Providers>
       </body>
     </html>
