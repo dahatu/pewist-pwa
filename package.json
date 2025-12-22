@@ -8,7 +8,7 @@
     "start": "bun run --bun next start",
     "lint": "eslint",
     "generate:remixicons": "bun ./scripts/generate-remixicon.ts",
-    "git": "git add . && git commit -m 'some changes' && git push"
+    "git": "git add . && git commit -m 'some changes + bun package manager' && git push"
   },
   "dependencies": {
     "@base-ui-components/react": "^1.0.0-rc.0",
