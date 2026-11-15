@@ -2,6 +2,17 @@
   "name": "pewist-pwa",
   "version": "1.0.0",
   "private": true,
+  "packageManager": "bun",
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "onFail": "error"
+    },
+    "packageManager": {
+      "name": "bun",
+      "onFail": "error"
+    }
+  }
   "scripts": {
     "dev": "bun run --bun next dev --webpack",
     "build": "bun run --bun next build",
