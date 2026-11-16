@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Pewist",
   description: "Pewist",
   manifest: "/manifest.json",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL!),
 };
 
 export default function RootLayout({
