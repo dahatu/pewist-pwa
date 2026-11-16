@@ -7,9 +7,10 @@ import AppWrapper from "@/components/views/AppWrapper";
 export const metadata: Metadata = {
   title: "Pewist",
   description: "Pewist",
-  manifest: "/manifest.json",
-  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL!),
+  manifest: "/manifest.json"
 };
+
+console.log('subdomain:', process.env.NEXT_PUBLIC_APP_URL)
 
 export default function RootLayout({
   children,
