@@ -12,7 +12,7 @@
       "name": "bun",
       "onFail": "error"
     }
-  }
+  },
   "scripts": {
     "dev": "bun run --bun next dev --webpack",
     "build": "bun run --bun next build",
