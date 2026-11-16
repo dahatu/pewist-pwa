@@ -36,7 +36,7 @@ export default function Home() {
   return (
     <div className="flex flex-col gap-2 p-10">
       <div className="flex gap-2">
-        <Input />
+        <Input placeholder="Railpack working on coolify"/>
         <Button>تکایە کلیک بکە</Button>
       </div>
 
