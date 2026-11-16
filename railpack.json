@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schema.railpack.com",
+  "provider": "node",
+  "packages": {
+    "node": "26",
+    "bun": "latest"
+  },
+  "deploy": {
+    "startCommand": "bun run start",
+    "variables": {}
+  }
+}
